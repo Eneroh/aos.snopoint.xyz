@@ -1,0 +1,526 @@
+/* styles.css */
+
+/*@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: sans-serif;
+}
+
+/*@font-face {
+	font-family: test;
+	src: url(../fonts/BebasNeue-Regular.woff);
+}*/
+
+body {
+	background-color: #1b1c23;
+}
+
+/* page specific ids */
+
+h1 {
+	color: #f4f4f4;
+	text-align: center;
+}
+
+h2 {
+	color: #0000eb;
+}
+
+table {
+	empty-cells: hide;
+	display: block;
+	width: 100%;
+}
+
+th, td, tr, tbody {
+	display: block;
+	width: 100%;
+}
+
+td {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+table:nth-child(even) {
+	background-color: #1b1e4b;
+	text-align: center;
+	border: 1px solid black;
+}
+
+table:nth-child(odd) {
+	text-align: center;
+	border: 1px solid black;
+}
+
+#intro {
+	color: #f4f4f4;
+	height: 100%;
+	width: auto;
+}
+
+#news {
+	color: #f4f4f4;
+	height: 100%;
+	width: auto;
+}
+
+#info {
+	color: #f4f4f4;
+	height: 100%;
+	width: auto;
+}
+
+#maps {
+	color: #f4f4f4;
+	height: 100%;
+	width: auto;
+}
+
+#scripts {
+	color: #f4f4f4;
+	height: 100%;
+	width: auto;
+}
+
+#contact {
+	color: #f4f4f4;
+	height: 100%;
+	width: auto;
+}
+
+/* nav bar in all its glory */
+
+nav {
+	padding-top: 2.5%;
+	padding-bottom: 5%;
+	position: static;
+	height: 10%;
+	width: 100%;
+	list-style-type: none;
+	font-size: 110%;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	color: #f4f4f4;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav a {
+	border-radius: 7%;
+	margin: 0 1%;
+	padding: 1% 1%;
+	font-size: 75%;
+	color: #f4f4f4;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #00FF00;
+	color: #000;
+}
+
+nav .current {
+	background-color: #0000FF;
+	color: #f4f4f4;
+}
+
+.navlogo {
+	height: 5%;
+	width: auto;
+	padding-left: 20%;
+	padding-bottom: 5%;
+}
+
+/* index related ids and classes */
+
+#bgpic {
+	height: 250px;
+	width: 100%;
+	background-image: url("../images/openspades.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#header {
+	padding-top: 5%;
+	height: auto;
+	width: auto;
+}
+
+.logo {
+	text-align: center;
+}
+
+.heading {
+	height: 10%;
+	width: 100%;
+	text-align: center;
+	text-shadow: 50px solid black;
+	font-size: 120%;
+	padding-top: 7%;
+	padding-bottom: 1%;
+}
+
+.subheading {
+	text-align: center;
+	text-shadow: 50px solid black;
+	width: 100%;
+}
+
+/* news classes */
+
+#newsmain {
+	padding-top: 5%;
+	padding-left: 20%;
+	padding-right: 20%;
+
+}
+
+/* about classes */
+
+#infomain {
+	padding-left: 20%;
+	height: auto;
+	width: auto;
+}
+
+.infotop {
+	height: 100%;
+	width: 100%;
+}
+
+.infobottom {
+	height: 100%;
+	max-width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+/* info pic divs */
+
+.pic1 {
+	display: inline;
+	padding: 5%;	
+}
+
+.pic2 {
+	display: inline;
+	padding: 5%;
+}
+
+.pic3 {
+	display: inline;
+	padding: 5%;
+}
+
+.pic4 {
+	display: inline;
+	padding: 5%;
+}
+
+.pic5 {
+	display: inline;
+	padding: 5%;
+}
+
+/* Maps classes */
+
+#mapsmain {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 5%;
+	height: auto;
+	width: auto;
+}
+
+#mapstable {
+	display: block;
+	width: 100%;
+}
+
+/* Scripts classes */
+
+#scriptsmain {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 5%;
+	height: auto;
+	width: auto;
+}
+
+#scriptstable {
+	display: block;
+	width: 100%;
+}
+
+/* Contact classes */
+
+#contmain {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 5%;
+	height: auto;
+	width: auto;
+}
+
+/* Hyperlink related items */
+
+a:link {
+	text-decoration: none;
+	outline: 0;
+}
+
+a:active {
+	color: #1b1b1b;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0000FF;
+}
+
+a:visited {
+	
+}
+
+/* Resizing options */
+
+@media screen and (max-width:992px) {
+
+	#navlogo {
+		width: 100%;
+		padding-left: 0%;
+		
+	}
+	
+	.heading {
+		padding-top: 20%;
+	}
+	
+	#newsmain {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#infomain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;	
+	}
+
+	.infotop {
+		width: 100%;
+	}
+	
+	.infobottom {
+		width: 100%;
+	}
+
+	.pic1 {
+		display: inline;
+	}
+
+	.pic2 {
+		display: inline;
+	}
+	
+	#mapsmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0;
+	}
+
+	#scriptsmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	
+	#contmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	#navlogo {
+		width: 100%;
+		padding-left: 0%;
+		
+	}
+	
+	.heading {
+		padding-top: 20%;
+	}
+
+	#newsmain {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#infomain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;	
+	}
+
+	.infotop {
+		width: 100%;
+	}
+	
+	.infobottom {
+		width: 100%;
+	}
+
+	.pic1 {
+		display: inline;
+	}
+
+	.pic2 {
+		display: inline;
+	}
+	
+	#mapsmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0;
+	}
+
+	#scriptsmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	
+	#contmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	#navlogo {
+		width: 100%;
+		padding-left: 0%;
+		
+	}
+	
+	.heading {
+		padding-top: 60%;
+	}
+	
+	#newsmain {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#infomain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;	
+	}
+
+	.infotop {
+		width: 100%;
+	}
+	
+	.infobottom {
+		width: 100%;
+	}
+
+	.pic1 {
+		display: inline;
+	}
+
+	.pic2 {
+		display: inline;
+	}
+	
+	#mapsmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0;
+	}
+
+	#scriptsmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	
+	#contmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+@media screen and (max-width: 300px) {
+
+	#navlogo {
+		width: 100%;
+		padding-left: 0%;
+		
+	}
+	
+	.heading {
+		color: #FF00FF;
+		padding-top: 20%;
+	}
+
+	#infomain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;	
+	}
+
+	.infotop {
+		width: 100%;
+	}
+	
+	.infobottom {
+		width: 100%;
+	}
+
+	.pic1 {
+		display: inline;
+	}
+
+	.pic2 {
+		display: inline;
+	}
+	
+	#mapsmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0;
+	}
+
+	#scriptsmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	
+	#contmain {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
